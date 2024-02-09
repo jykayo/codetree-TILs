@@ -2,7 +2,7 @@ alph = input()
 if alph == 'S':
     print("Superior")
 elif alph == 'A':
-    print("Exellent")
+    print("Excellent")
 elif alph == 'B':
     print("Good")
 elif alph == 'C':

@@ -7,10 +7,12 @@ if a > b:
         print(b)
     elif c > a:
         print(a)
+    else:
+        print(c)
 elif b > a:
     if c > b:
         print(b)
     elif a > c:
         print(a)
-else:
-    print(c)
+    else:
+        print(c)

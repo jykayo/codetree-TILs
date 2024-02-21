@@ -4,7 +4,7 @@ for _ in range(q):
     arr = list(map(int, input().split()))
     if arr[0] == 1:
         a = arr[1]
-        print(arr[a-1])
+        print(n_arr[a-1])
     elif arr[0] == 2:
         a = arr[1]
         if a not in n_arr:

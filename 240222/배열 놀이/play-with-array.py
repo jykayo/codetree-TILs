@@ -11,6 +11,7 @@ for _ in range(q):
             print(0)
         else:
             print(n_arr.index(a)+1)
+            continue
     elif arr[0] == 3:
         a, b = arr[1], arr[2]
         for i in range(a-1, b):

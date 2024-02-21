@@ -15,5 +15,5 @@ for i in range(3):
         count_arr[3] += 1
 if cnt >= 2:
     count_arr.append('E')
-for i in range(5):
+for i in range(len(count_arr)):
     print(count_arr[i], end=' ')

@@ -1,6 +1,5 @@
 n = int(input())
-# arr = list(map(int, input().split()))
-arr = [9, 7, 5, 3, 1]
+arr = list(map(int, input().split()))
 idx = 0
 cheep = arr[0]
 for i in range(n):

@@ -8,6 +8,6 @@ for i in range(n-1):
             arr[j] = 0
             satis = False
             break
-    if satis == True:
+    if satis == True and arr[i] > max_val:
         max_val = arr[i]
 print(max_val)

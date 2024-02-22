@@ -10,6 +10,6 @@ for i in range(n-1):
             break
     if satis == True and arr[i] > max_val:
         max_val = arr[i]
-if arr[-1] > max_val:
+if arr[-1] > max_val and arr[-1] != 0:
     max_val = arr[-1]
 print(max_val)

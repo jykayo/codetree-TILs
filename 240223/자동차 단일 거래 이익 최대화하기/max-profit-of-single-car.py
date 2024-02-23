@@ -1,13 +1,10 @@
+import sys
 n = int(input())
 arr = list(map(int, input().split()))
-idx = 0
-cheep = arr[0]
+max_val = -sys.maxsize
 for i in range(n):
-    if arr[i] < cheep:
-        cheep = arr[i]
-        idx = i
-expen = arr[idx]
-for i in range(idx, n):
-    if arr[i] > expen:
-        expen = arr[i]
-print(expen - cheep)
+    for j in range(i+1, n):
+        price = arr[j] - arr[i]
+        if price > max_val:
+            max_val = price
+print(max_val)

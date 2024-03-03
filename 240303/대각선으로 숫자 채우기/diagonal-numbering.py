@@ -1,6 +1,4 @@
-# n, m = tuple(map(int, input().split()))
-n = 3
-m = 5
+n, m = tuple(map(int, input().split()))
 arr = [
     [0 for _ in range(m)]
     for _ in range(n)

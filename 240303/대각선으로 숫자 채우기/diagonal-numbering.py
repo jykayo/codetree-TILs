@@ -1,10 +1,12 @@
-n, m = tuple(map(int, input().split()))
+# n, m = tuple(map(int, input().split()))
+n = 3
+m = 5
 arr = [
     [0 for _ in range(m)]
     for _ in range(n)
 ]
 num = 1
-for col in range(n):
+for col in range(m):
     i = 0
     j = col
     while i < n and j >= 0:
@@ -12,7 +14,7 @@ for col in range(n):
         num += 1
         i += 1
         j -= 1
-for row in range(1, m):
+for row in range(1, n):
     i = row
     j = m-1
     while i < n and j >= 0:

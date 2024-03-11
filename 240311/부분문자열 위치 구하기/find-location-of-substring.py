@@ -1,7 +1,5 @@
-# string = input()
-# target = input()
-string = "water"
-target = "water"
+string = input()
+target = input()
 check = -1
 for i in range(len(string)):
     if string[i] == target[0]:

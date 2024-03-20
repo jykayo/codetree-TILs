@@ -14,7 +14,6 @@ while True:
     if check == False:
         break
     else:
-        for _ in range(lenA):
-            strA = strA[:i] + strA[i + lenB:]
+        strA = strA[:i] + strA[i + lenB:]
         lenA = len(strA)
 print(strA)

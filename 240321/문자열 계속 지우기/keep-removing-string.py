@@ -3,6 +3,7 @@ strB = input()
 lenA = len(strA)
 lenB = len(strB)
 while True:
+    idx = -1
     for i in range(lenA - lenB + 1):
         check = True
         for j in range(lenB):
@@ -10,10 +11,10 @@ while True:
                 check = False
                 break
         if check == True:
+            idx = 0
             break
-    if check == False:
+    if idx == -1:
         break
-    else:
-        strA = strA[:i] + strA[i + lenB:]
-        lenA = len(strA)
+    strA = strA[:i] + strA[i + lenB:]
+    lenA = len(strA)
 print(strA)

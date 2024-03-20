@@ -15,7 +15,5 @@ for i in range(q):
         for j in range(len(s)):
             if s[j] == a:
                 s[j] = b
-            elif s[j] == b:
-                s[j] = a
         s = ''.join(s)
         print(s)

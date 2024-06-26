@@ -4,7 +4,6 @@ arr2 = list(map(int, input().split()))
 if n1 < n2:
     print("No")
 else:
-    check = False
     for i in range(n1-n2+1):
         booli = True
         for j in range(n2):
@@ -12,9 +11,8 @@ else:
                 booli = False
                 break
         if booli == True:
-            check = True
             break
-    if check == True:
+    if booli == True:
         print("Yes")
     else:
         print("No")
